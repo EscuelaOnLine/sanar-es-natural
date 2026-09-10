@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Micro-sombras cromáticas sutiles individuales -->
+    <filter id="chromaPurple" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7C3AED" flood-opacity="0.22" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#4C1D95" flood-opacity="0.12" />
+    </filter>
+    <filter id="chromaYellow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#D97706" flood-opacity="0.26" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#B45309" flood-opacity="0.12" />
+    </filter>
+    <filter id="chromaRed" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#E11D48" flood-opacity="0.24" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#9F1239" flood-opacity="0.12" />
+    </filter>
+    <filter id="chromaGreen" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#16A34A" flood-opacity="0.24" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#14532D" flood-opacity="0.12" />
+    </filter>
+    <filter id="chromaBlueCenter" x="-35%" y="-35%" width="170%" height="175%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#2563EB" flood-opacity="0.28" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1E3A8A" flood-opacity="0.16" />
+    </filter>
+
+    <!-- Micro-gradientes cenitales sutiles -->
+    <linearGradient id="gradPurpleSutil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B46FF"/><stop offset="100%" stop-color="#702CD9"/>
+    </linearGradient>
+    <linearGradient id="gradYellowSutil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3BD17"/><stop offset="100%" stop-color="#E2A602"/>
+    </linearGradient>
+    <linearGradient id="gradRedSutil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EA2854"/><stop offset="100%" stop-color="#D4143E"/>
+    </linearGradient>
+    <linearGradient id="gradGreenSutil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#19AE51"/><stop offset="100%" stop-color="#129441"/>
+    </linearGradient>
+    <linearGradient id="gradBlueSutil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F6DF6"/><stop offset="100%" stop-color="#1E57DC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Módulos canónicos de la Cruz -->
+  <g id="modulo-morado" filter="url(#chromaPurple)">
+    <rect x="190" y="60" width="120" height="120" rx="14" fill="url(#gradPurpleSutil)"/>
+    <path d="M 204 61 L 296 61" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.35"/>
+  </g>
+  <g id="modulo-amarillo" filter="url(#chromaYellow)">
+    <rect x="60" y="190" width="120" height="120" rx="14" fill="url(#gradYellowSutil)"/>
+    <path d="M 74 191 L 166 191" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.45"/>
+  </g>
+  <g id="modulo-rojo" filter="url(#chromaRed)">
+    <rect x="320" y="190" width="120" height="120" rx="14" fill="url(#gradRedSutil)"/>
+    <path d="M 334 191 L 426 191" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.35"/>
+  </g>
+  <g id="modulo-verde" filter="url(#chromaGreen)">
+    <rect x="190" y="320" width="120" height="120" rx="14" fill="url(#gradGreenSutil)"/>
+    <path d="M 204 321 L 296 321" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.35"/>
+  </g>
+  <g id="modulo-azul-central" filter="url(#chromaBlueCenter)">
+    <rect x="190" y="190" width="120" height="120" rx="14" fill="url(#gradBlueSutil)" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M 204 192.5 L 296 192.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.65"/>
+  </g>
+</svg>
